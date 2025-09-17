@@ -4,7 +4,7 @@ const router = express.Router();
 const nodemailer = require("nodemailer");
 const Contact = require("../models/contactsmodel"); // mongoose model
 
-router.post("/", async (req, res) => {
+router.post("/contact", async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
